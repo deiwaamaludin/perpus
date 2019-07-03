@@ -58,7 +58,7 @@ class Admin extends CI_Controller
 
     function buku(){
       $data
-      ['anggota'] = $this->M_perpus->get_data('anggota')->result();
+      ['buku'] = $this->M_perpus->get_data('buku')->result();
       $this->load->view('admin/header');
       $this->load->view('admin/buku',$data);
       $this->load->view('admin/footer');
